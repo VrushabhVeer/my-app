@@ -1,14 +1,21 @@
+"use client";
 import Image from "next/image";
-import React from "react";
+import React, { useEffect } from "react";
 import hero from "@/assets/developer.png";
+import "aos/dist/aos.css";
+import Aos from "aos";
 
 const Hero = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
+
   return (
     <div
       id="hero"
       className="w-11/12 md:w-10/12 mx-auto flex flex-col-reverse md:flex-col-reverse lg:flex-row gap-5 md:gap-20 md:pt-10 items-center"
     >
-      <div className="w-full">
+      <div className="w-full" data-aos="zoom-in">
         <div>
           <h1 className="text-4xl md:text-6xl font-bold text-[#224e89]">
             Hello, I&apos;m <span className="name">Vrushabh.</span>
@@ -27,7 +34,7 @@ const Hero = () => {
           </a>
         </div>
       </div>
-      <div className="w-full">
+      <div className="w-full" data-aos="zoom-in">
         <Image
           className="w-full"
           src={hero}

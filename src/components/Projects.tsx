@@ -1,8 +1,15 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
 import projectsData from "@/data/projectsData";
 import ProjectCard from "./ProjectCard";
+import "aos/dist/aos.css";
+import Aos from "aos";
 
 const Projects = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
+
   return (
     <div id="projects" className="w-11/12 md:w-10/12 mx-auto pt-16">
       <div className="text-center">

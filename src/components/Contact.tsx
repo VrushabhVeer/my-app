@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import React, { FormEvent, useRef } from "react";
+import React, { FormEvent, useEffect, useRef } from "react";
 import linkedIn from "@/assets/linkedin.png";
 import github from "@/assets/github.png";
 import twitter from "@/assets/twitter.png";
@@ -9,8 +9,14 @@ import phone from "@/assets/telephone.png";
 import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import "aos/dist/aos.css";
+import Aos from "aos";
 
 const Contact: React.FC = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
+
   const form = useRef<HTMLFormElement>(null);
 
   const sendEmail = (e: FormEvent<HTMLFormElement>) => {
@@ -53,7 +59,7 @@ const Contact: React.FC = () => {
     <div id="contact">
       <ToastContainer />
       <div className="w-11/12 md:w-10/12 mx-auto flex flex-col-reverse md:flex-col-reverse lg:flex-row gap-5 md:gap-20 mt-20 md:pt-14 items-center">
-        <div className="w-full">
+        <div className="w-full" data-aos="zoom-in">
           <form ref={form} onSubmit={sendEmail}>
             <div className="flex flex-col md:flex-row items-center gap-5 mt-5">
               <input
@@ -95,7 +101,7 @@ const Contact: React.FC = () => {
           </form>
         </div>
 
-        <div className="w-full">
+        <div className="w-full" data-aos="zoom-in">
           <div>
             <h1 className="text-4xl md:text-6xl font-bold text-[#224e89]">
               Get In Touch

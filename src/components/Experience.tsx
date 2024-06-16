@@ -1,8 +1,15 @@
+"use client";
 import Image from "next/image";
-import React from "react";
+import React, { useEffect } from "react";
 import latitude from "@/assets/latitude-logo.webp";
+import "aos/dist/aos.css";
+import Aos from "aos";
 
 const Experience = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
+
   return (
     <div id="experience" className="w-11/12 md:w-10/12 mx-auto flex items-center pt-24 md:pt-0 md:h-[80vh]">
       <div>
@@ -11,8 +18,8 @@ const Experience = () => {
         <p className="text-[#3f3f46]">Here is an overview of my work experience.</p>
       </div>
 
-      <div className="mt-10">
-        <div className="w-full rounded-md shadow-md border hover:shadow-sm p-8">
+      <div className="mt-10" data-aos="zoom-in">
+        <div className="w-full rounded-md shadow-md border border-slate-100 hover:shadow-sm p-8">
           <div className="flex flex-col md:flex-row items-center justify-between">
             <div className="flex flex-col md:flex-row float-left items-center gap-4">
               <a

@@ -5,7 +5,7 @@ import liveUrl from "@/assets/link.png";
 import { Project } from "@/data/projectTypes";
 
 const ProjectCard: React.FC<Project> = ({ title, image, description, tags, githubLink, liveLink }) => (
-  <div className="rounded-md shadow-lg hover:shadow-sm">
+  <div className="rounded-md shadow-lg hover:shadow-sm" data-aos="zoom-in">
     <div>
       <Image
         className="w-full rounded-t-md"

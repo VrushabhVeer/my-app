@@ -1,5 +1,6 @@
+"use client";
 import Image from "next/image";
-import React from "react";
+import React, { useEffect } from "react";
 import html from "@/assets/html-5.png";
 import css from "@/assets/css-3.png";
 import javascript from "@/assets/javascript.png";
@@ -12,6 +13,8 @@ import sass from "@/assets/sass.png";
 import git from "@/assets/git.png";
 import github from "@/assets/github.png";
 import nextJs from "@/assets/next-js.png";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const skills = [
   { src: html, alt: "HTML 5", label: "HTML 5" },
@@ -29,6 +32,10 @@ const skills = [
 ];
 
 const Skills = () => {
+  useEffect(() => {
+    Aos.init({ duration: 500 });
+  }, []);
+
   return (
     <div id="skills" className="w-10/12 mx-auto pt-24">
       <div className="text-center">
@@ -40,6 +47,7 @@ const Skills = () => {
           <div
             key={index}
             className="p-6 rounded-md flex flex-col items-center bg-blue-50 hover:shadow-md"
+            data-aos="zoom-in-up"
           >
             <Image
               className="w-14 h-14 object-contain"
