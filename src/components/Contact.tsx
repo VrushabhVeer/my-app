@@ -134,7 +134,7 @@ const Contact: React.FC = () => {
           <div className="flex flex-row items-center gap-5 mt-7">
             <div>
               <a
-                href="https://www.linkedin.com/in/vrushabh-veer"
+                href="https://www.linkedin.com/in/vrushabhveer"
                 target="_blank"
                 rel="noopener noreferrer"
               >
