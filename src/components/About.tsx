@@ -36,7 +36,7 @@ const About = () => {
           innovative solutions and make a meaningful impact.
         </p>
 
-        <a href="./Vrushabh_Veer-Resume.pdf" download>
+        <a href="./Vrushabh_Veer_Resume.pdf" download>
           <button
             className="mt-8 px-10 py-4 bg-[#ef611b] font-medium text-white rounded-md"
             role="button"
