@@ -11,57 +11,71 @@ const Experience = () => {
   }, []);
 
   return (
-    <div id="experience" className="w-11/12 md:w-10/12 mx-auto flex items-center pt-24 md:pt-0 md:h-[80vh]">
+    <div
+      id="experience"
+      className="w-11/12 md:w-10/12 mx-auto flex items-center pt-24 md:pt-0 md:h-[80vh]"
+    >
       <div>
-      <div className="text-center">
-        <h1 className="text-3xl font-bold">My Experience</h1>
-        <p className="text-[#3f3f46]">Here is an overview of my work experience.</p>
-      </div>
+        <div className="text-center">
+          <h1 className="text-3xl font-bold">My Experience</h1>
+          <p className="text-[#3f3f46]">
+            Here is an overview of my work experience.
+          </p>
+        </div>
 
-      <div className="mt-10" data-aos="zoom-in">
-        <div className="w-full rounded-md shadow-md border border-slate-100 hover:shadow-sm p-8">
-          <div className="flex flex-col md:flex-row items-center justify-between">
-            <div className="flex flex-col md:flex-row float-left items-center gap-4">
-              <a
-                href="https://latitudetechnolabs.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Image
-                  className="w-20"
-                  src={latitude}
-                  alt="latitude-logo"
-                  loading="lazy"
-                />
-              </a>
-              <h2 className="font-semibold md:text-lg text-left">
-                React JS Developer at Latitude Technolabs
-              </h2>
+        <div className="mt-10" data-aos="zoom-in">
+          <div className="w-full rounded-md shadow-md border border-slate-100 hover:shadow-sm p-8">
+            <div className="flex flex-col md:flex-row items-center justify-between">
+              <div className="flex flex-col md:flex-row float-left items-center gap-4">
+                <a
+                  href="https://latitudetechnolabs.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image
+                    className="w-20"
+                    src={latitude}
+                    alt="latitude-logo"
+                    loading="lazy"
+                  />
+                </a>
+                <h2 className="font-semibold md:text-lg text-left">
+                  React JS Developer at Latitude Technolabs
+                </h2>
+              </div>
+              <div>
+                <p className="font-medium">Nov 2023 - Present</p>
+              </div>
             </div>
-            <div>
-              <p className="font-medium">Nov 2023 - Present</p>
-            </div>
-          </div>
 
-          <div className="mt-5">
-            <p className="text-[#3f3f46]">
-              As a React JS Developer at Latitude Technolabs, I developed and
-              maintained dynamic web applications. I created responsive and
-              interactive user interfaces with React JS to enhance user
-              engagement. I collaborated with cross-functional teams to design,
-              develop, and deploy software solutions. Using Redux for state
-              management, I improved data flow and application performance. I
-              also utilized HTML, CSS, and JavaScript to build modern UI
-              components and used Tailwind CSS and SCSS for consistent and
-              attractive styling. I managed code versions and worked with team
-              members using Git. Additionally, I gained experience in
-              server-side development with Node JS, contributing to the backend
-              functionality. This role helped me enhance my web development
-              skills and build scalable, maintainable software solutions.
-            </p>
+            <div className="mt-5">
+              <p className="text-[#3f3f46]">
+                As a React JS Developer at Latitude Technolabs Pvt Ltd, played a
+                key role in developing and maintaining dynamic web applications,
+                focusing on creating responsive and engaging user interfaces
+                with React JS. By working closely with cross-functional teams,
+                including designers and backend developers, contributed to the
+                seamless design, development, and deployment of software
+                solutions that meet high standards of quality.
+                <br />
+                Used Redux for efficient state management, which improved data
+                flow and boosted application performance. Built modern and
+                intuitive UI components using HTML, CSS, and JavaScript, and
+                ensured that the design remained consistent and visually
+                appealing with the help of Tailwind CSS and SCSS. Actively
+                managed code versions with Git, ensuring smooth collaboration
+                and version control within the team.
+                <br />
+                Additionally, expanded expertise into server-side development
+                with Node JS, contributing to the backend functionality that
+                supported the frontend. This experience not only honed web
+                development skills but also provided a solid foundation for
+                building scalable, maintainable software solutions that deliver
+                real value to users.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
       </div>
     </div>
   );

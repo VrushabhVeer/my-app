@@ -24,8 +24,9 @@ const Hero = () => {
             I build things for the web.
           </h2>
           <p className="mt-5 text-[#3f3f46]">
-            From intuitive user interfaces to seamless digital experiences, I
-            create innovative solutions. Lets build something amazing together.
+            Creating innovative solutions that bring intuitive user interfaces
+            and seamless digital experiences to life. Excited to collaborate and
+            build something amazing together.
           </p>
           <a href="#contact">
             <button className="bg-[#ecc64d] text-white px-10 py-4 rounded-md mt-8 font-medium">

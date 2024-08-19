@@ -26,14 +26,14 @@ const About = () => {
         </div>
 
         <p className="mt-5 text-[#3f3f46]">
-          As a self-motivated developer and creative individual, I am deeply
-          passionate about crafting user-friendly products that resonate with
-          users. I thrive on the continuous development of technical skills,
-          always seeking new challenges to grow and evolve professionally. My
-          enthusiasm lies in taking on complex roles that not only push my
-          limits but also contribute significantly to an organizations overall
-          growth and development. I am excited about the opportunity to create
-          innovative solutions and make a meaningful impact.
+          A self-motivated developer and creative individual, deeply passionate
+          about crafting user-friendly products that resonate with users.
+          Thrives on continuously developing technical skills and always seeks
+          new challenges to grow and evolve professionally. Enthusiastic about
+          taking on complex roles that push limits while contributing
+          significantly to an organizations overall growth and development.
+          Excited about the opportunity to create innovative solutions and make
+          a meaningful impact.
         </p>
 
         <a href="./Vrushabh_Veer_Resume.pdf" download>
