@@ -105,7 +105,7 @@ export default function Navbar() {
           ))}
 
           <a
-            href="https://drive.google.com/file/d/1Q6bSVb6bKfYDqjtyfRFvSslxS-5XlOML/view?usp=sharing"
+            href="https://drive.google.com/file/d/13GUgl-pLTc3bC5pBNka44uWxu4BwH_kA/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -132,7 +132,7 @@ export default function Navbar() {
             ))}
 
             <a
-              href="https://drive.google.com/file/d/1Q6bSVb6bKfYDqjtyfRFvSslxS-5XlOML/view?usp=sharing"
+              href="https://drive.google.com/file/d/13GUgl-pLTc3bC5pBNka44uWxu4BwH_kA/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
             >
