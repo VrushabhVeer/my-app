@@ -23,6 +23,22 @@ export default function Navbar() {
     };
   }, []);
 
+  const handleResumeClick = (event: React.MouseEvent<HTMLAnchorElement>) => {
+    event.preventDefault();
+
+    // Start the download
+    const downloadLink = document.createElement("a");
+    downloadLink.href = "./Vrushabh_Veer_Resume.pdf";
+    downloadLink.setAttribute("download", "Resume.pdf");
+    document.body.appendChild(downloadLink);
+    downloadLink.click();
+    document.body.removeChild(downloadLink);
+
+    // Redirect to another page
+    window.location.href =
+      "https://drive.google.com/file/d/1zZHPXOWDb1GmZaID_uq-nxtkb1fArfVE/view?usp=drive_link"; // Change this to your desired URL
+  };
+
   const links = [
     { to: "hero", label: "Home" },
     { to: "about", label: "About" },
@@ -104,11 +120,7 @@ export default function Navbar() {
             </Link>
           ))}
 
-          <a
-            href="https://drive.google.com/file/d/13GUgl-pLTc3bC5pBNka44uWxu4BwH_kA/view?usp=sharing"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href="#" onClick={handleResumeClick}>
             <p>Resume</p>
           </a>
         </div>
@@ -131,11 +143,7 @@ export default function Navbar() {
               </Link>
             ))}
 
-            <a
-              href="https://drive.google.com/file/d/13GUgl-pLTc3bC5pBNka44uWxu4BwH_kA/view?usp=sharing"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a href="#" onClick={handleResumeClick}>
               <p>Resume</p>
             </a>
           </div>
