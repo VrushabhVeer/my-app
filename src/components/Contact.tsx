@@ -161,7 +161,7 @@ const Contact: React.FC = () => {
               </a>
             </div>
             <div>
-              <a href="" target="_blank" rel="noopener noreferrer">
+              <a href="https://x.com/VrushabhTweet" target="_blank" rel="noopener noreferrer">
                 <Image
                   className="w-7"
                   src={twitter}
