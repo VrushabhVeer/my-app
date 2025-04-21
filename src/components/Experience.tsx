@@ -44,7 +44,7 @@ const Experience = () => {
                 </h2>
               </div>
               <div>
-                <p className="font-medium">Nov 2023 - Present</p>
+                <p className="font-medium">March 2023 - Present</p>
               </div>
             </div>
 

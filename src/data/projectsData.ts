@@ -1,3 +1,4 @@
+import maniacMilk from "@/assets/maniacMilk.png";
 import tralive from "@/assets/tralive.png";
 import adidas from "@/assets/adidas.png";
 import coinvest from "@/assets/coinvest.png";
@@ -5,6 +6,15 @@ import readit from "@/assets/readit.png";
 import { Project } from "@/data/projectTypes";
 
 const projectsData: Project[] = [
+  {
+    title: "ManiacMilk",
+    image: maniacMilk,
+    description:
+      "Built a responsive e-commerce site for milk and dairy products using React, Node.js & Tailwind. Integrated Razorpay for payments and added features like cart, order tracking, and admin inventory control.",
+    tags: ["Javascript", "React", "Tailwind Css", "Node JS", "Razorpay"],
+    githubLink: "https://github.com/VrushabhVeer/ManiacMilk-frontend",
+    liveLink: "https://maniacmilk.in/",
+  },
   {
     title: "Tralive",
     image: tralive,
