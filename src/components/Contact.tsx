@@ -123,11 +123,11 @@ const Contact: React.FC = () => {
                 alt="email"
                 loading="lazy"
               />
-              <p>veervrushabh@gmail.com</p>
+              <p>vrushabhveer96@gmail.com</p>
             </div>
             <div className="flex flex-row items-center gap-3 mt-3">
               <Image className="w-4" src={phone} alt="phone" loading="lazy" />
-              <p>+91 9767428263</p>
+              <p>+91 9773183679</p>
             </div>
           </div>
 

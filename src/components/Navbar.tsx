@@ -36,7 +36,7 @@ export default function Navbar() {
 
     // Redirect to another page
     window.location.href =
-      "https://drive.google.com/file/d/1zZHPXOWDb1GmZaID_uq-nxtkb1fArfVE/view?usp=drive_link"; // Change this to your desired URL
+      ""; // Change this to your desired URL
   };
 
   const links = [
